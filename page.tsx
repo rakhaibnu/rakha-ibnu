@@ -8,7 +8,6 @@ import * as React from "react";
 import TiltedCard from "@/components/blocks/Components/TiltedCard/TiltedCard";
 import ScrollVelocity from "@/components/blocks/TextAnimations/ScrollVelocity/ScrollVelocity";
 import BounceCards from "@/components/blocks/Components/BounceCards/BounceCards";
-import { Github } from "lucide-react";
 
 
 export default function Home() {
@@ -51,7 +50,7 @@ export default function Home() {
       >
         <TiltedCard
           imageSrc="/Rakha.jpeg"
-          altText="Rakha Ibnu"
+          altText=""
           captionText="Rakha Ibnu"
           containerHeight="300px"
           containerWidth="300px"
@@ -87,13 +86,9 @@ export default function Home() {
               height={50}
             /></a>
             <a href="https://github.com/rakhaibnu">
-              <Image
-                src={"/github.png"}
-                alt={"github"}
-                width={50}
-                height={50}
-              />
+              
             </a>
+            
           </div>
         </div>
       </div>
@@ -163,7 +158,7 @@ export default function Home() {
                 enableHover={true}
               />
             </div>
-            <p className="font-medium mt-4">
+            <p className="mt-4">
               SnakesGP is an educational board game application inspired by the
               classic game of Snakes and Ladders, designed to introduce children
               to the rich and diverse geoparks of Indonesia. Each tile on the
