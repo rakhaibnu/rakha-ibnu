@@ -20,10 +20,10 @@ export default function Home() {
   ];
 
   const snakes = [
-    "/SnakesGP.jpg",
+    "/snakesgp.jpg",
     "/snakesgame.jpg",
     "/snakeshome.jpg",
-    "/Snakeswinner.jpg",
+    "/snakestrue.jpg",
     "/snakesexplain.jpg",
   ];
 
