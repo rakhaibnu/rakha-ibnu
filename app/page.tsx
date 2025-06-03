@@ -20,10 +20,10 @@ export default function Home() {
   ];
 
   const snakes = [
-    "/snakesgp.jpg",
+    "/SnakesGP.jpg",
     "/snakesgame.jpg",
     "/snakeshome.jpg",
-    "/snakeswinner.jpg",
+    "/Snakeswinner.jpg",
     "/snakesexplain.jpg",
   ];
 
@@ -103,7 +103,7 @@ export default function Home() {
         <h2 className="text-2xl font-semibold ">Skills</h2>
         <RollingGallery autoplay={true} pauseOnHover={false} />
       </div>
-      <div id="Projects" className="py-120">
+      <div id="Projects" className="py-20">
         <ScrollVelocity
           texts={["My Projects", "Scroll Down"]}
           className="custom-scroll-text"
