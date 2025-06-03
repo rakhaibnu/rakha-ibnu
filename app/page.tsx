@@ -14,13 +14,13 @@ export default function Home() {
   const images = [
     "/Gesit.jpg",
     "/GesitCarbon.jpg",
-    "/gesithome.jpg",
+    "/GesitHome.jpg",
     "/GesitFinding.jpg",
-    "/gesitorder.jpg",
+    "/GesitOrder.jpg",
   ];
 
   const snakes = [
-    "/SnakesGp.jpg",
+    "/snakesgp.jpg",
     "/snakesgame.jpg",
     "/snakeshome.jpg",
     "/snakeswinner.jpg",
