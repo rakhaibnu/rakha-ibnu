@@ -20,11 +20,11 @@ export default function Home() {
   ];
 
   const snakes = [
-    "/snakesgp.jpg",
+    "/SnakesGP.jpg",
     "/snakesgame.jpg",
     "/snakeshome.jpg",
-    "/snakestrue.jpg",
-    "/snakesexplain.jpg",
+    "/snakesmultiple.jpg",
+    "/SnakesExplain.jpg",
   ];
 
   const transformStyles = [
