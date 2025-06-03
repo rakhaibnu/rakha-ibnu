@@ -1,9 +1,10 @@
 /*
-	Installed from https://reactbits.dev/ts/tailwind/
+    Installed from https://reactbits.dev/ts/tailwind/
 */
 
 import { useEffect } from "react";
 import { gsap } from "gsap";
+import Image from "next/image";
 
 interface BounceCardsProps {
   className?: string;
@@ -146,10 +147,14 @@ export default function BounceCards({
           onMouseEnter={() => pushSiblings(idx)}
           onMouseLeave={resetSiblings}
         >
-          <img
+          <Image
             className="w-auto h-full object-contain rounded-2xl"
             src={src}
             alt={`card-${idx}`}
+            width={400}
+            height={400}
+            priority={idx === 0}
+            quality={90}
           />
         </div>
       ))}

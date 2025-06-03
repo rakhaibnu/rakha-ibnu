@@ -27,6 +27,10 @@ interface RollingGalleryProps {
   images?: string[];
 }
 
+interface MotionUpdateEvent {
+  rotateY?: number;
+}
+
 const RollingGallery: React.FC<RollingGalleryProps> = ({
   autoplay = false,
   pauseOnHover = false,
@@ -57,7 +61,6 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({
   // 3D geometry calculations
   const cylinderWidth: number = isScreenSizeSm ? 1100 : 1800;
   const faceCount: number = galleryImages.length;
-  const faceWidth: number = (cylinderWidth / faceCount) * 1.5;
   const radius: number = cylinderWidth / (2 * Math.PI);
 
   // Framer Motion values and controls
@@ -92,18 +95,18 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [autoplay]);
 
-  const handleUpdate = (latest: any) => {
+  const handleUpdate = (latest: MotionUpdateEvent) => {
     if (typeof latest.rotateY === "number") {
       rotation.set(latest.rotateY);
     }
   };
 
-  const handleDrag = (_: any, info: PanInfo): void => {
+  const handleDrag = (_: MouseEvent | TouchEvent | PointerEvent, info: PanInfo): void => {
     controls.stop();
     rotation.set(rotation.get() + info.offset.x * dragFactor);
   };
 
-  const handleDragEnd = (_: any, info: PanInfo): void => {
+  const handleDragEnd = (_: MouseEvent | TouchEvent | PointerEvent, info: PanInfo): void => {
     const finalAngle = rotation.get() + info.velocity.x * dragFactor;
     rotation.set(finalAngle);
     if (autoplay) {
@@ -163,7 +166,7 @@ const RollingGallery: React.FC<RollingGalleryProps> = ({
               <Image
                 fill
                 src={url}
-                alt="gallery"
+                alt={`gallery-image-${i}`}
                 className="pointer-events-none h-[5px] w-[5px] rounded-[15px] object-cover transition-transform duration-300 ease-out group-hover:scale-105 sm:h-[50px] sm:w-[50px]"
               />
             </div>
