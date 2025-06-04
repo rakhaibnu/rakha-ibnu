@@ -68,7 +68,7 @@ export default function Home() {
           }
         />
         <div className="flex flex-col items-start justify-center max-w-lg">
-          <h3 className="text-4xl font-bold">Hi, I&apos;m Chaisal Farabi</h3>
+          <h3 className="text-4xl font-bold">Hi, I&apos;m Rakha Ibnu</h3>
           <p className="mt-4 text-l">
             I am an active student at UPN Veteran Jakarta, class of 2023,
             majoring in Information Systems in the Faculty of Computer Science.
