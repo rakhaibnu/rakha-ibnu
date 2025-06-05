@@ -180,7 +180,7 @@ export default function Home() {
               playful, interactive way.
             </p>
           </div>
-          <div className="font-serif my-20">
+          <div className="my-20">
             <h4 className="text-2xl font-semibold my-10 text-center">
               Removies
             </h4>
