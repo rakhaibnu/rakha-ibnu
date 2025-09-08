@@ -40,7 +40,7 @@ const Navbar = () => {
     <div
       className={`border-1 fixed top-0 left-0 right-0 z-50 h-20 transition-all duration-500 ease-in-out rounded-full ${
         isScrolled
-          ? " backdrop-blur-md shadow-md max-w-3xl mx-auto"
+          ? " backdrop-blur-md shadow-md max-w-3xl mx-auto mt-4"
           : "bg-transparent max-w-full"
       }`}
     >

@@ -83,7 +83,7 @@ export default function Home() {
             <p className="mt-6 font-bold">mrakha.gunawan@gmail.com</p>
           </div>
           <div className="flex mt-4 gap-4">
-            <a href="https://www.linkedin.com/in/rakha-ibnu-54b405285/">
+            <a href="https://www.linkedin.com/in/muhammad-rakha-ibnu-gunawan-54b405285/">
               <Image
                 src={"/linkedin.png"}
                 alt={"linkedin"}
